@@ -64,7 +64,7 @@ export default function HomePage() {
               opacity: "1",
             }}
             component="img"
-            src="/img/logo_vic2.png"
+            src="./img/logo_vic2.png"
           />
           <Box
             sx={{
