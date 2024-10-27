@@ -56,7 +56,7 @@ export default function DomaineCard({domaine, title,detail,style}) {
   return (
     <>
     <Box sx={{  }}>
-      <Card variant="outlined" sx={{border:1}}> 
+      <Card variant="outlined" sx={{border:1, borderColor:"orange"}}> 
             <CardContent>
             <Box>
                 <GetIcon title={title} />
