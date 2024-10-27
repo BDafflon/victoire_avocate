@@ -76,7 +76,7 @@ export default function HomePage() {
               opacity: "0.5",
             }}
             component="img"
-            src="/img/narbonne7.png"
+            src="./img/narbonne7.png"
           />
         </Box>
         <Box
