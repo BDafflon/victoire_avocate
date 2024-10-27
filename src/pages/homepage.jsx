@@ -93,7 +93,7 @@ export default function HomePage() {
           }}
         >
           <Grid container spacing={2}>
-            <Grid
+            <Grid 
               item
               xs={0}
               md={3}
