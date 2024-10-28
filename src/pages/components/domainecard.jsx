@@ -50,7 +50,7 @@ function GetIcon({title}){
 
 }
 
-export default function DomaineCard({domaine, title,detail,style}) {
+export default function DomaineCard({domaine, title,detail,style, morable=true}) {
     const [more, setMore] = React.useState(detail==""?true:false)
 
   return (
@@ -68,7 +68,7 @@ export default function DomaineCard({domaine, title,detail,style}) {
             {title}
             </Typography>
             <Typography sx={{ mb: 1,...style }} color="text.secondary">
-            {more?(
+            {more || !morable ?(
                 <>
                 <List dense>
                     {
@@ -87,7 +87,7 @@ export default function DomaineCard({domaine, title,detail,style}) {
             ):null}
             </Typography>
             </CardContent>
-            {detail==""?null:<CardActions>
+            {detail=="" || !morable ?null:<CardActions>
             <Button size="small" sx={{ color:"black","&:hover": { color: "orange",} }} onClick={()=>setMore(!more)}>{more?'Moins':'Lire plus'}</Button>
               </CardActions>}
       </Card>
