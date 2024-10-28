@@ -59,7 +59,6 @@ export default function HomePage() {
               ml: "100px",
               mt: "150px",
               maxWidth:" 100%",
-              height: "auto",
               maxHeight: "100px",
               objectFit: "scale-down",
               position: "absolute",
