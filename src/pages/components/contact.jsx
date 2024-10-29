@@ -12,7 +12,7 @@ import { orange } from "@mui/material/colors";
 import EventIcon from '@mui/icons-material/Event';
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 import PlaceIcon from '@mui/icons-material/Place';
-
+import EmailIcon from '@mui/icons-material/Email';
 
 function GetMap(){
 return(
@@ -44,7 +44,7 @@ export default function Contact() {
         
         <Stack direction="row" alignItems="center" gap={1}>
            <EventIcon sx={{ color: orange[500] }}/>
-          <Typography variant="body1"> Le cabinet est ouvert du lundi au vendredi de 09h00 à 12h00 et de 14h00 à 19h00 
+          <Typography variant="body1" sx={{textAlign:"left"}}> Le cabinet est ouvert du lundi au vendredi de 09h00 à 12h00 et de 14h00 à 19h00 
         </Typography>
         </Stack>
         
@@ -53,17 +53,17 @@ export default function Contact() {
           
         <Stack direction="row" alignItems="center" gap={1}>
            <LocalPhoneIcon sx={{ color: orange[500] }}/>
-          <Typography variant="body1"> Téléphone : 07.68.38.72.13
+          <Typography variant="body1" sx={{textAlign:"left"}}> Téléphone : 07.68.38.72.13
         </Typography>
         </Stack>
         <Stack direction="row" alignItems="center" gap={1}>
-           <LocalPhoneIcon sx={{ color: orange[500] }}/>
-          <Typography variant="body1"> E-mail: cabinet@dafflon-avocat.fr
+           <EmailIcon sx={{ color: orange[500] }}/>
+          <Typography variant="body1" sx={{textAlign:"left"}}> E-mail: cabinet@dafflon-avocat.fr
         </Typography>
         </Stack>
         <Stack direction="row" alignItems="center" gap={1}>
            <PlaceIcon sx={{ color: orange[500] }}/>
-          <Typography variant="body1"> Adresse : 43, Avenue Pierre Sémard – 11100 NARBONNE
+          <Typography variant="body1" sx={{textAlign:"left"}}> Adresse : 43, Avenue Pierre Sémard – 11100 NARBONNE
         </Typography>
         </Stack>
         </Grid>

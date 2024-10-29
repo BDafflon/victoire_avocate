@@ -68,6 +68,7 @@ export default function Footer({setPage}) {
       <Typography variant="caption" gutterBottom display="block">
         - Droit routier
       </Typography>
+      <Typography variant="caption" gutterBottom display="block">- Droit du travail </Typography>
        </Box>
       
       </Grid>
