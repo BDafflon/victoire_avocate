@@ -19,6 +19,7 @@ import Honoraire from "./components/honoraire";
 import Contact from "./components/contact";
 import Mention from "./components/mention";
 import { useParams } from "react-router-dom";
+import Information_Utiles from "./components/information_utiles";
 
 function GetTitle({ page }) {
   if (page == 0) return <>{"Le Cabinet"}</>;
@@ -39,6 +40,7 @@ export default function HomePage() {
     if (page_id == "honoraire") setPage(2);
     if (page_id == "contact") setPage(3);
     if (page_id == "mention") setPage(4);
+    if (page_id == "information") setPage(5);
   }, []);
 
   const handleClick = (event) => {
@@ -252,6 +254,8 @@ export default function HomePage() {
           {page == 3 ? <Contact /> : null}
 
           {page == 4 ? <Mention /> : null}
+
+          {page == 5 ? <Information_Utiles /> : null}
         </Box>
 
         <Footer setPage={setPage} />
