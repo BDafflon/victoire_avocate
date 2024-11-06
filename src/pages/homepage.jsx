@@ -54,34 +54,51 @@ export default function HomePage() {
     <>
       <CssBaseline />
       <Box sx={{ height: "100vh" }}>
-        <Box sx={{ maxHeight: "350px" }}>
-          <Box
-            sx={{
-              height: "100%",
-              ml: "100px",
-              mt: "150px",
-              maxWidth:" 100%",
-              maxHeight: "100px",
-              objectFit: "scale-down",
-              position: "absolute",
-              opacity: "1",
-            }}
-            component="img"
-            src="./img/logo_vic2.png"
-          />
-          <Box
-            sx={{
-              width: "100%",
-              backgroundPosition: "center 0px",
-              height: "300px",
-              padding: "90",
-              objectFit: "cover",
-              opacity: "0.5",
-            }}
-            component="img"
-            src="./img/narbonne7.png"
-          />
-        </Box>
+      <Box
+      sx={{
+        maxHeight: "350px",
+        height: "350px",
+        width: "100%",
+        position: "relative",
+        overflow: "hidden",
+      }}
+    >
+      {/* Background Image */}
+      <Box
+        component="img"
+        src="./img/narbonne7.png"
+        sx={{
+          width: "100%",
+          height: "100%",
+          objectFit: "cover",
+          position: "absolute",
+          top: 0,
+          left: 0,
+          opacity: 0.5,
+        }}
+        alt="Background"
+      />
+
+      {/* Logo Image */}
+      <Box
+        component="img"
+        src="./img/logo_vic2.png"
+        sx={{
+          position: "absolute",
+          top: "50%", // Centrage vertical
+          left: "50%", // Centrage horizontal
+          transform: "translate(-50%, -50%)",
+          maxWidth: "350px", // Limite la largeur maximale à 15% de la largeur de la fenêtre
+          minWidth: "100px", // Largeur minimale de 100px pour s'assurer qu'il ne devienne pas trop petit
+          maxHeight: "150px", // Limite la hauteur maximale
+          width: "auto",
+          height: "auto",
+          objectFit: "contain",
+          zIndex: 1,
+        }}
+        alt="Logo"
+      />
+    </Box>
         <Box
           sx={{
             display: "flex",
@@ -154,6 +171,14 @@ export default function HomePage() {
                     }}
                   >
                     Contact
+                  </MenuItem>
+                  <MenuItem
+                    onClick={() => {
+                      handleClose();
+                      setPage(5);
+                    }}
+                  >
+                    Documents utils
                   </MenuItem>
                 </Menu>
               </div>
