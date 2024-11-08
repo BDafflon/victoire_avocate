@@ -79,7 +79,7 @@ export default function Footer({setPage}) {
         - <Link onClick={()=>setPage(4)} underline="none" sx={{ color: "white","&:hover": { color: "orange",} }} >Mentions légales </Link> 
       </Typography>
       <Typography variant="caption" gutterBottom display="block">
-        - <Link onClick={()=>setPage(5)} underline="none" sx={{ color: "white","&:hover": { color: "orange",} }} >Documents utils </Link> 
+        - <Link onClick={()=>setPage(5)} underline="none" sx={{ color: "white","&:hover": { color: "orange",} }} >Documents utiles </Link> 
       </Typography>
        </Box>
       </Grid>

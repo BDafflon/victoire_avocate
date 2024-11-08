@@ -31,6 +31,7 @@ const domaineDetail = {
     "Droit pénal du mineur",
     "Dépôt de plainte",
     "droit des victimes",
+    "CIVI / SARVI"
   ],
   Personnes: [
     "Divorce",
