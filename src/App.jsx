@@ -8,24 +8,74 @@ import {
   Routes,
 } from "react-router-dom";
 import HomePage from './pages/homepage'
+import { Navigate } from "react-router-dom";
+
 
 function App() {
-  
+ 
+
+
   return (
     <Router>
       <Routes>
-        <Route
-            exact 
-            path="/:page_id?" 
-            element={
-              <HomePage />
-            } 
+      <Route
+          exact
+          path="/"
+          element={
+            <HomePage page_id={"lecabinet"} />
+          }
         />
-      
-      </Routes> 
+        <Route
+          exact
+          path="/lecabinet"
+          element={
+            <HomePage page_id={"lecabinet"} />
+          }
+        />
+        <Route
+          exact
+          path="/domainesdecompetences"
+          element={
+            <HomePage page_id={"domainesdecompetences"} />
+          }
+        />
+        <Route
+          exact
+          path="/honoraire"
+          element={
+            <HomePage page_id={"honoraire"} />
+          }
+        />
+         <Route
+          exact
+          path="/contact"
+          element={
+            <HomePage page_id={"contact"} />
+          }
+        />
+         <Route
+          exact
+          path="/mention"
+          element={
+            <HomePage page_id={"mention"} />
+          }
+        />
+        <Route
+          exact
+          path="/information"
+          element={
+            <HomePage page_id={"information"} />
+          }
+        />
+        <Route
+          path="*"
+          element={<Navigate to="/" replace={true} />}
+        />
+
+      </Routes>
     </Router>
-)
- 
+  )
+
 }
 
 export default App

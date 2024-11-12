@@ -20,6 +20,12 @@ import Contact from "./components/contact";
 import Mention from "./components/mention";
 import { useParams } from "react-router-dom";
 import Information_Utiles from "./components/information_utiles";
+import { Helmet } from "react-helmet";
+import { useNavigate } from "react-router-dom";
+
+
+
+
 
 function GetTitle({ page }) {
   if (page == 0) return <>{"Le Cabinet"}</>;
@@ -27,20 +33,23 @@ function GetTitle({ page }) {
   if (page == 2) return <>{"Honoraires"}</>;
   if (page == 3) return <>{"Contact"}</>;
 }
-export default function HomePage() {
+export default function HomePage({ page_id }) {
+
   const [page, setPage] = React.useState(0);
-  const { page_id } = useParams();
 
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
+  const navigate = useNavigate();
+ 
 
   useEffect(() => {
-    if (page_id == "lecaninet") setPage(0);
+    if (page_id == "lecabinet") setPage(0);
     if (page_id == "domainesdecompetences") setPage(1);
     if (page_id == "honoraire") setPage(2);
     if (page_id == "contact") setPage(3);
     if (page_id == "mention") setPage(4);
     if (page_id == "information") setPage(5);
+ 
   }, []);
 
   const handleClick = (event) => {
@@ -52,6 +61,13 @@ export default function HomePage() {
 
   return (
     <>
+    <Helmet>
+      <title>Victoire Dafflon - Avocate - Narbonne </title>
+      <meta name="description" content={"site web de victoire dafflon, "+page_id }/>
+      <meta property="og:title" content="Victoire Dafflon - Avocate - Narbonne" />
+      <meta property="og:description" content="site web de victoire dafflon" />
+      <link rel="canonical" href={"https://dafflon-avocat.com/?"+page_id} />
+    </Helmet>
       <CssBaseline />
       <Box sx={{ height: "100vh" }}>
       <Box
@@ -249,7 +265,7 @@ export default function HomePage() {
                     color: page == 3 ? "orange" : "black",
                     "&:hover": { color: "orange" },
                   }}
-                  onClick={() => setPage(3)}
+                  onClick={() => navigate('/page_id?contact')}
                 >
                   Contact
                 </Link>
