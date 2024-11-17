@@ -24,7 +24,7 @@ function App() {
       <Routes>
       <Route
           exact
-          path="/:id_page"
+          path="/:id_page?"
           element={
             <HomePage />
           }
