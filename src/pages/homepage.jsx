@@ -37,8 +37,8 @@ export default function HomePage() {
 
   const [page, setPage] = React.useState(0);
   const params = new URLSearchParams(document.location.search);
-  const page_id = params.get("page_id")
-  
+  const { page_id } = useParams();
+
 
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
@@ -46,7 +46,7 @@ export default function HomePage() {
  
 
   useEffect(() => {
-    ;
+  
     if (page_id == "lecabinet") setPage(0);
     if (page_id == "domainesdecompetences") setPage(1);
     if (page_id == "honoraire") setPage(2);

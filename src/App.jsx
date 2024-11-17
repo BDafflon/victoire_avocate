@@ -29,6 +29,13 @@ function App() {
             <HomePage />
           }
         />
+        <Route
+          exact
+          path="/:page_id"
+          element={
+            <HomePage />
+          }
+        />
         
         <Route
           exact
