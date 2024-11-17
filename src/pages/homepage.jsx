@@ -33,9 +33,10 @@ function GetTitle({ page }) {
   if (page == 2) return <>{"Honoraires"}</>;
   if (page == 3) return <>{"Contact"}</>;
 }
-export default function HomePage({ page_id }) {
+export default function HomePage() {
 
   const [page, setPage] = React.useState(0);
+  const { page_id } = useParams();
 
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);

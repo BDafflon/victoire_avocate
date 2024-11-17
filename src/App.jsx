@@ -24,53 +24,12 @@ function App() {
       <Routes>
       <Route
           exact
-          path="/"
+          path="/:id_page"
           element={
-            <HomePage page_id={"lecabinet"} />
+            <HomePage />
           }
         />
-        <Route
-          exact
-          path="/lecabinet"
-          element={
-            <HomePage page_id={"lecabinet"} />
-          }
-        />
-        <Route
-          
-          path="/domainesdecompetences"
-          element={
-            <HomePage page_id={"domainesdecompetences"} />
-          }
-        />
-        <Route
-          exact
-          path="/honoraire"
-          element={
-            <HomePage page_id={"honoraire"} />
-          }
-        />
-         <Route
-          exact
-          path="/contact"
-          element={
-            <HomePage page_id={"contact"} />
-          }
-        />
-         <Route
-          exact
-          path="/mention"
-          element={
-            <HomePage page_id={"mention"} />
-          }
-        />
-        <Route
-          exact
-          path="/information"
-          element={
-            <HomePage page_id={"information"} />
-          }
-        />
+        
         <Route
           exact
           path="/sitemaps.xml"
@@ -78,10 +37,7 @@ function App() {
             <SiteMap />
           }
         />
-        <Route
-          path="*"
-          element={<Navigate to="/" replace={true} />}
-        />
+         
 
       </Routes>
    
