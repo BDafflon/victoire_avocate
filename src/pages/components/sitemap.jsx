@@ -45,7 +45,7 @@ let maps = `<?xml version="1.0" encoding="UTF-8"?>
 </urlset>
 `
 
-export default function Cabinet() {
+export default function SiteMap() {
      return (
         {maps}
      )

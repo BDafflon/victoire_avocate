@@ -9,6 +9,7 @@ import {
 } from "react-router-dom";
 import HomePage from './pages/homepage'
 import { Navigate } from "react-router-dom";
+import SiteMap from './pages/components/sitemap';
 
 
 function App() {
