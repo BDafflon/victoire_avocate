@@ -265,7 +265,7 @@ export default function HomePage({ page_id }) {
                     color: page == 3 ? "orange" : "black",
                     "&:hover": { color: "orange" },
                   }}
-                  onClick={() => navigate('/contact')}
+                  onClick={() => navigate('contact')}
                 >
                   Contact
                 </Link>
