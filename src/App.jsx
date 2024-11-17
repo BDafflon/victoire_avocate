@@ -36,7 +36,7 @@ function App() {
           }
         />
         <Route
-          exact
+          
           path="/domainesdecompetences"
           element={
             <HomePage page_id={"domainesdecompetences"} />
