@@ -7,37 +7,37 @@ let maps = `<?xml version="1.0" encoding="UTF-8"?>
     <priority>1</priority>
   </url>
   <url>
-    <loc>https://dafflon-avocat.com/?page_id=lecabinet</loc>
+    <loc>https://dafflon-avocat.com/lecabinet</loc>
     <lastmod>2024-11-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
     <url>
-    <loc>https://dafflon-avocat.com/?page_id=domainesdecompetences</loc>
+    <loc>https://dafflon-avocat.com/domainesdecompetences</loc>
     <lastmod>2024-11-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
     <url>
-    <loc>https://dafflon-avocat.com/?page_id=honoraire</loc>
+    <loc>https://dafflon-avocat.com/honoraire</loc>
     <lastmod>2024-11-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
     <url>
-    <loc>https://dafflon-avocat.com/?page_id=contact</loc>
+    <loc>https://dafflon-avocat.com/contact</loc>
     <lastmod>2024-11-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
     <url>
-    <loc>https://dafflon-avocat.com/?page_id=mention</loc>
+    <loc>https://dafflon-avocat.com/mention</loc>
     <lastmod>2024-11-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
    <url>
-    <loc>https://dafflon-avocat.com/?page_id=information</loc>
+    <loc>https://dafflon-avocat.com/information</loc>
     <lastmod>2024-11-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
