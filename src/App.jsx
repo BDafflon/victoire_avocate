@@ -5,6 +5,7 @@ import './App.css'
 import {
   BrowserRouter as Router,
   Route,
+  HashRouter,
   Routes,
 } from "react-router-dom";
 
@@ -18,7 +19,7 @@ function App() {
 
 
   return (
-    <Router>
+    <HashRouter>
      
       <Routes>
       <Route
@@ -84,7 +85,7 @@ function App() {
 
       </Routes>
       
-    </Router>
+    </HashRouter>
   )
 
 }
