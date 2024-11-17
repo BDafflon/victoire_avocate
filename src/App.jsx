@@ -19,7 +19,7 @@ function App() {
 
 
   return (
-    <HashRouter>
+     
      
       <Routes>
       <Route
@@ -84,8 +84,7 @@ function App() {
         />
 
       </Routes>
-      
-    </HashRouter>
+  
   )
 
 }
