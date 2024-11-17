@@ -4,12 +4,12 @@ import {
   CssBaseline,
   Divider,
   Grid,
+  Link,
   Menu,
   MenuItem,
   Stack,
   Typography,
 } from "@mui/material";
-import {Link} from "react-router-dom";
 import { orange } from "@mui/material/colors";
 import Footer from "./components/footer";
 import Cabinet from "./components/cabinet";
@@ -39,7 +39,7 @@ export default function HomePage({ page_id }) {
 
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
-  const navigate = useNavigate();
+ 
  
 
   useEffect(() => {
@@ -265,7 +265,7 @@ export default function HomePage({ page_id }) {
                     color: page == 3 ? "orange" : "black",
                     "&:hover": { color: "orange" },
                   }}
-                   to="/contact"
+                  onClick={()=>setPage(5)}
                 >
                   Contact
                 </Link>
