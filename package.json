@@ -1,7 +1,7 @@
 {
   "name": "victoire_avocate",
   "private": true,
-  "homepage": "/victoire_avocate/",
+  "homepage": ".",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
