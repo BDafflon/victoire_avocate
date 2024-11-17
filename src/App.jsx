@@ -68,6 +68,13 @@ function App() {
           }
         />
         <Route
+          exact
+          path="/sitemaps.xml"
+          element={
+            <SiteMap />
+          }
+        />
+        <Route
           path="*"
           element={<Navigate to="/" replace={true} />}
         />
