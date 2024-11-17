@@ -36,7 +36,7 @@ function GetTitle({ page }) {
 export default function HomePage() {
 
   const [page, setPage] = React.useState(0);
-  const { page_id } = useParams();
+  
 
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
@@ -44,6 +44,8 @@ export default function HomePage() {
  
 
   useEffect(() => {
+    let params = new URLSearchParams(document.location.search);
+    let page_id = params.get("page_id");
     if (page_id == "lecabinet") setPage(0);
     if (page_id == "domainesdecompetences") setPage(1);
     if (page_id == "honoraire") setPage(2);
@@ -266,7 +268,7 @@ export default function HomePage() {
                     color: page == 3 ? "orange" : "black",
                     "&:hover": { color: "orange" },
                   }}
-                  onClick={()=>setPage(5)}
+                  onClick={()=>setPage(3)}
                 >
                   Contact
                 </Link>
