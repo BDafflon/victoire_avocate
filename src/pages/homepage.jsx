@@ -54,7 +54,7 @@ export default function HomePage() {
     if (page_id == "mention") setPage(4);
     if (page_id == "information") setPage(5);
  
-  }, []);
+  }, [page_id]);
 
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
