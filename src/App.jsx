@@ -7,7 +7,7 @@ import {
   Route,
   Routes,
 } from "react-router-dom";
-import { HashRouter } from 'react-router-dom';
+
 import HomePage from './pages/homepage'
 import { Navigate } from "react-router-dom";
 import SiteMap from './pages/components/sitemap';
@@ -19,7 +19,7 @@ function App() {
 
   return (
     <Router>
-      <HashRouter>
+     
       <Routes>
       <Route
           exact
@@ -83,7 +83,7 @@ function App() {
         />
 
       </Routes>
-      </HashRouter>
+      
     </Router>
   )
 
