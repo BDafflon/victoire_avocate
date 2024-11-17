@@ -36,6 +36,8 @@ function GetTitle({ page }) {
 export default function HomePage() {
 
   const [page, setPage] = React.useState(0);
+  const params = new URLSearchParams(document.location.search);
+  const page_id = params.get("page_id")
   
 
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -44,8 +46,7 @@ export default function HomePage() {
  
 
   useEffect(() => {
-    let params = new URLSearchParams(document.location.search);
-    let page_id = params.get("page_id");
+    ;
     if (page_id == "lecabinet") setPage(0);
     if (page_id == "domainesdecompetences") setPage(1);
     if (page_id == "honoraire") setPage(2);
