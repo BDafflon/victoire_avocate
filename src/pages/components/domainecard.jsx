@@ -72,9 +72,10 @@ export default function DomaineCard({domaine, title,detail,style, morable=true})
                 <>
                 <List dense>
                     {
-                        detail.map(d=>(
+                        detail.map((d,i)=>(
                             <ListItem>
                             <ListItemText
+                            key={"detail"+i}
                             sx={style}
                                 primary={d}
                             />

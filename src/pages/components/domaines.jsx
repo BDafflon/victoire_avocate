@@ -2,7 +2,7 @@ import {
   Box,
   CssBaseline,
   Divider,
-  Grid,
+  Grid2,
   Link,
   Stack,
   Typography,
@@ -66,12 +66,12 @@ const domaineDetail = {
 export default function Domaines() {
   return (
     <>
-      <Grid
+      <Grid2
         container
         spacing={2}
         sx={{ mt: 5, ml: 5, mr: 5, backgroundColor: "white" }}
       >
-        <Grid item xs={0} md={3} display={{ xs: "none", md: "block", mt: 5 }}>
+        <Grid2 item xs={0} md={3} display={{ xs: "none", md: "block", mt: 5 }}>
           <Typography
             sx={{
               fontWeight: 300,
@@ -84,52 +84,58 @@ export default function Domaines() {
           >
             Domaines d’interventions
           </Typography>
-        </Grid>
-        <Grid item xs={12} md={9}>
+        </Grid2>
+        <Grid2 item xs={12} md={9}>
           <Typography sx={{ textAlign: "justify", mt: 2 }}>
             Vous trouverez ci-après les principaux domaines d’intervention
             exercé par le Cabinet mais n’hésitez pas nous joindre pour davantage
             de renseignements.{" "}
           </Typography>
-          <Grid container spacing={1} sx={{ mt: 1, mr: 1 }}>
-            <Grid item xs={12} md={6} lg={4} align="center">
+          <Grid2 container spacing={1} sx={{ mt: 1, mr: 1 }}>
+            <Grid2 item xs={12} md={6} lg={4} align="center">
               <DomaineCard
+                key={"domaine penal"}
                 domaine="droit"
                 title="Pénal"
                 detail={domaineDetail["Penal"]}
               />
-            </Grid>
-            <Grid item xs={12} md={6} lg={4} align="center">
+            </Grid2>
+            <Grid2 item xs={12} md={6} lg={4} align="center">
               <DomaineCard
+                key={"domaine civil"}
                 domaine="droit"
                 title="Civil"
                 detail={domaineDetail["Civil"]}
               />
-            </Grid>
-            <Grid item xs={12} md={6} lg={4} align="center">
+            </Grid2>
+            <Grid2 item xs={12} md={6} lg={4} align="center">
               <DomaineCard
+                key={"domaine personne"}
                 domaine="droit des"
                 title="Personnes"
                 detail={domaineDetail["Personnes"]}
               />
-            </Grid>
-            <Grid item xs={12} md={6} lg={4} align="center">
+            </Grid2>
+            <Grid2 item xs={12} md={6} lg={4} align="center">
               <DomaineCard
+                key={"domaine Routier"}
                 domaine="droit"
                 title="Routier"
                 detail={domaineDetail["Routier"]}
               />
-            </Grid>
-            <Grid item xs={12} md={6} lg={4} align="center">
+            </Grid2>
+            <Grid2 item xs={12} md={6} lg={4} align="center">
               <DomaineCard
+                key={"domaine Travail"}
+
                 domaine="droit"
                 title="Travail"
                 detail={domaineDetail["Travail"]}
               />
-            </Grid>
-          </Grid>
-        </Grid>
-      </Grid>
+            </Grid2>
+          </Grid2>
+        </Grid2>
+      </Grid2>
     </>
   );
 }
