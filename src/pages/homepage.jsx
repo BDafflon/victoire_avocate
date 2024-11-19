@@ -198,7 +198,7 @@ export default function HomePage() {
                       setPage(5);
                     }}
                   >
-                    Documents utils
+                    Documents utiles
                   </MenuItem>
                 </Menu>
               </div>
